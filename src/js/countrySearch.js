@@ -56,7 +56,7 @@ function renderCountriesCard(countries) {
 function onFetchError(error) {
     error({
             title: 'ПРЕДУПРЕЖДЕНИЕ',
-            text: 'Введите правильно страну error 404',
+            text: 'Введите правильно страну',
             delay: 2000,
        
         }); return;
