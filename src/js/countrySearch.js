@@ -28,7 +28,7 @@ function renderCountriesCard(countries) {
         error({
             title: 'ПРЕДУПРЕЖДЕНИЕ',
             text: 'Введите название страны',
-            delay: 1000,
+            delay: 2000,
             
         });  return;
         
@@ -37,7 +37,7 @@ function renderCountriesCard(countries) {
         error({
             title: 'ПРЕДУПРЕЖДЕНИЕ',
             text: 'Слишком много вариантов. Уточните, пожалуйста, запрос',
-            delay: 1000,
+            delay: 2000,
        
         }); return;
         
@@ -57,7 +57,7 @@ function onFetchError(error) {
     error({
             title: 'ПРЕДУПРЕЖДЕНИЕ',
             text: 'Введите правильно страну error 404',
-            delay: 1000,
+            delay: 2000,
        
         }); return;
 };
