@@ -8,8 +8,6 @@ import refs from "./getRefs";
 import { markupCountiesList, markupCountryCard } from "./markup";
 import fetchCountries from './fetchCountries';
 
-// const cardContainerEl = document.querySelector(".js-countries-container");
-// const inputEl = document.querySelector(".js-input");
 
 refs.inputEl.addEventListener('input', debounce(onInputChange, 500));
 
@@ -19,7 +17,7 @@ function onInputChange(event) {
 
  fetchCountries(searchQuery).then(renderCountriesCard)
     .catch(onFetchError)
-    // .finally(event.target.value = '');
+    
 };
 
 function renderCountriesCard(countries) {   
