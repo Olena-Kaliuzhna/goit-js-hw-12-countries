@@ -44,7 +44,7 @@ function renderCountriesCard(countries) {
        markupCountiesList(countries)
         return;
     }
-    if (countries.length = 1) {
+    if (countries.length === 1) {
         markupCountryCard(countries) 
         return;
     };
